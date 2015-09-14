@@ -112,6 +112,6 @@
     }));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/deathlyBot/source/master/basicBot.js", extend);
+   javascript:(function(){$.getScript('https://rawgit.com/deathlyBot/custom/master/extension.js');})();
 
 }).call(this);
