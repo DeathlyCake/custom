@@ -48,8 +48,8 @@
     localStorage.setItem("basicBotsettings", JSON.stringify({
       botName: "DeathlyBot",
       language: "english",
-      chatLink: "https://rawgit.com/deathlyBot/source/master/lang/en.json",
-      scriptLink: "https://rawgit.com/deathlyBot/source/master/basicBot.js",
+      chatLink: "https://rawgit.com/DeathlyCake/source/master/lang/en.json",
+      scriptLink: "https://rawgit.com/DeathlyCake/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 200, // 1-200
       startupVolume: 0, // 0-100
