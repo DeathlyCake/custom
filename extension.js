@@ -1,7 +1,7 @@
 (function () {
 
     // Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "deathlyBot";
+    var fork = "DeathlyCake";
 
     // Define our function responsible for extending the bot.
     function extend() {
@@ -112,6 +112,6 @@
     }));
 
     // Start the bot and extend it when it has loaded.
-   javascript:(function(){$.getScript('https://rawgit.com/deathlyBot/custom/master/extension.js');})();
+   javascript:(function(){$.getScript('https://rawgit.com/DeathlyCake/custom/master/extension.js');})();
 
 }).call(this);
