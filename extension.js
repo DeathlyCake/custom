@@ -1,7 +1,7 @@
 (function () {
 
     // Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "bscBot";
+    var fork = "DeathlyCake";
 
     // Define our function responsible for extending the bot.
     function extend() {
@@ -46,12 +46,12 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "basicBot",
+      botName: "DeathlyCake",
       language: "english",
       chatLink: "https://rawgit.com/bscBot/source/master/lang/en.json",
       scriptLink: "https://rawgit.com/bscBot/source/master/basicBot.js",
-      roomLock: false, // Requires an extension to re-load the script
-      startupCap: 1, // 1-200
+      roomLock: true, // Requires an extension to re-load the script
+      startupCap: 200, // 1-200
       startupVolume: 0, // 0-100
       startupEmoji: false, // true or false
       autowoot: true,
@@ -68,11 +68,11 @@
       maximumLocktime: 10,
       cycleGuard: true,
       maximumCycletime: 10,
-      voteSkip: false,
-      voteSkipLimit: 10,
+      voteSkip: true,
+      voteSkipLimit: 3,
       historySkip: false,
       timeGuard: true,
-      maximumSongLength: 10,
+      maximumSongLength: 7,
       autodisable: true,
       commandCooldown: 30,
       usercommandsEnabled: true,
@@ -112,6 +112,6 @@
     }));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/bscBot/source/master/basicBot.js", extend);
+    $.getScript("https://rawgit.com/DeathlyCake/source/master/deathlyBot.js", extend);
 
 }).call(this);
