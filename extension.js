@@ -1,7 +1,7 @@
 (function () {
 
     // Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "bscBot";
+    var fork = "Deathly";
 
     // Define our function responsible for extending the bot.
     function extend() {
@@ -46,10 +46,10 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "basicBot",
+      botName: "DeathlyBot",
       language: "english",
       chatLink: "https://rawgit.com/bscBot/source/master/lang/en.json",
-      scriptLink: "https://rawgit.com/bscBot/source/master/basicBot.js",
+      scriptLink: "https://rawgit.com/Deathly/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 1, // 1-200
       startupVolume: 0, // 0-100
@@ -68,15 +68,15 @@
       maximumLocktime: 10,
       cycleGuard: true,
       maximumCycletime: 10,
-      voteSkip: false,
-      voteSkipLimit: 10,
-      historySkip: false,
+      voteSkip: true,
+      voteSkipLimit: 3,
+      historySkip: true,
       timeGuard: true,
-      maximumSongLength: 10,
+      maximumSongLength: 7,
       autodisable: true,
       commandCooldown: 30,
       usercommandsEnabled: true,
-      skipPosition: 3,
+      skipPosition: 10,
       skipReasons: [
       ["theme", "This song does not fit the room theme. "],
       ["op", "This song is on the OP list. "],
@@ -88,9 +88,9 @@
       ],
       afkpositionCheck: 15,
       afkRankCheck: "ambassador",
-      motdEnabled: false,
+      motdEnabled: true,
       motdInterval: 5,
-      motd: "Temporary Message of the Day",
+      motd: "Welcome to DeathlyLand. English/Norwegian Community. Chill with us and be the DJ to play songs, just join the wait list :)",
       filterChat: true,
       etaRestriction: false,
       welcome: true,
