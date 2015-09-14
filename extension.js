@@ -46,12 +46,12 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "basicBot",
+      botName: "DeathlyBot",
       language: "english",
-      chatLink: "https://rawgit.com/bscBot/source/master/lang/en.json",
-      scriptLink: "https://rawgit.com/bscBot/source/master/basicBot.js",
+      chatLink: "https://rawgit.com/deathlyBot/source/master/lang/en.json",
+      scriptLink: "https://rawgit.com/deathlyBot/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
-      startupCap: 1, // 1-200
+      startupCap: 200, // 1-200
       startupVolume: 0, // 0-100
       startupEmoji: false, // true or false
       autowoot: true,
@@ -65,14 +65,14 @@
       blacklistEnabled: true,
       lockdownEnabled: false,
       lockGuard: false,
-      maximumLocktime: 10,
+      maximumLocktime: 50,
       cycleGuard: true,
-      maximumCycletime: 10,
-      voteSkip: false,
-      voteSkipLimit: 10,
-      historySkip: false,
+      maximumCycletime: 50,
+      voteSkip: true,
+      voteSkipLimit: 5,
+      historySkip: true,
       timeGuard: true,
-      maximumSongLength: 10,
+      maximumSongLength: 7,
       autodisable: true,
       commandCooldown: 30,
       usercommandsEnabled: true,
@@ -112,6 +112,6 @@
     }));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/bscBot/source/master/basicBot.js", extend);
+    $.getScript("https://rawgit.com/deathlyBot/source/master/basicBot.js", extend);
 
 }).call(this);
